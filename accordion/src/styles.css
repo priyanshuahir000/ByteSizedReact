@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #2d3436;
+    background-color: #f5f6fa;
+    line-height: 1.6;
+}
+
+.accordion {
+    width: 80%;
+    max-width: 800px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.item {
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 24px;
+    row-gap: 16px;
+    align-items: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.item:hover {
+    border: 2px solid #7400b8;
+}
+
+.number {
+    font-size: 24px;
+    font-weight: 700;
+    color: #b2bec3;
+}
+
+.title,
+.icon {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2d3436;
+}
+
+.icon {
+    transition: transform 0.3s ease;
+}
+
+.content-box {
+    grid-column: 2 / -1;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: none;
+    font-size: 16px;
+    color: #636e72;
+}
+
+.content-box ul {
+    margin-left: 16px;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.content-box ul li {
+    list-style: disc;
+    color: #7400b8;
+}
+
+/* OPEN STATE */
+.open {
+    background-color: #fdfdfd;
+    border: 2px solid #7400b8;
+}
+
+.open .number,
+.open .title {
+    color: #7400b8;
+}
+
+.open .icon {
+    transform: rotate(180deg);
+}
+
+.open .content-box {
+    display: block;
+}

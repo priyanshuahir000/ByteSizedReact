@@ -56,8 +56,10 @@ body {
   border-radius: 0.9rem;
   overflow: scroll;
   position: relative;
-  overflow: hidden;
+}
 
+.box::-webkit-scrollbar {
+  width: 0;
 }
 
 .loader {

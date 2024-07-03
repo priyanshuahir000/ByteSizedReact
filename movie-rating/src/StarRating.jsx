@@ -10,7 +10,7 @@ const starContainerStyle = {
   display: "flex",
 };
 
-export default function StaticRating({
+export default function StarRating({
   maxRating = 5,
   color = "#fcc419",
   size = "48",
@@ -36,7 +36,7 @@ export default function StaticRating({
             key={i}
             onRate={() => {
               setRating(i + 1);
-              onSetRating &&  onSetRating(i + 1);
+              onSetRating && onSetRating(i + 1);
             }}
             onHoverIn={() => setTempRating(i + 1)}
             onHoverOut={() => setTempRating(0)}

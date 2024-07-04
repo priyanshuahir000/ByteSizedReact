@@ -16,7 +16,10 @@ export const average = (arr) =>
 
 export const KEY = "9035c45e";
 export default function App() {
-  const [watched, setWatched] = useState([]);
+  const [watched, setWatched] = useState(() => {
+    const watched = localStorage.getItem("watched");
+    return watched ? JSON.parse(watched) : [];
+  });
   const [movies, setMovies] = useState([]);
   const [query, setQuery] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -40,6 +43,13 @@ export default function App() {
   function handleDeleteWatched(id) {
     setWatched((watched) => watched.filter((movie) => movie.imdbID !== id));
   }
+
+  useEffect(
+    function () {
+      localStorage.setItem("watched", JSON.stringify(watched));
+    },
+    [watched]
+  );
 
   useEffect(() => {
     const controller = new AbortController();

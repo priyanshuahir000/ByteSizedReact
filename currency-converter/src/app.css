@@ -1,0 +1,240 @@
+/* App.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e0ffe0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffe0;
+    /* light yellow background */
+    border: 5px solid #333;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 10px 10px 0px #333;
+    width: 80%;
+    min-width: 600px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.title {
+    display: flex;
+    gap: 15px;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.answer-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 1rem;
+    border-top: 1px solid #333;
+    padding-top: 0.5rem;
+}
+
+.column {
+    width: 30%;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+input[type="number"] {
+    width: 80%;
+    padding: 0.5rem;
+    border: 3px solid #333;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 5px 5px 0px #333;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    background-color: #e0ffe0;
+}
+
+input[type="number"]:focus {
+    box-shadow: 8px 8px 0px #333;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 3px solid #333;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 5px 5px 0px #333;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    background-color: #e0ffe0;
+    /* light greenish background */
+}
+
+h3,
+h2,
+p {
+    margin: 0.5rem 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #232323;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+.Loading {
+    font-size: 1rem;
+    color: #555;
+    animation: fadeIn 1s ease-in-out infinite;
+}
+
+/* Responsive Code */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        min-width: unset;
+        padding: 1rem;
+    }
+
+    .title {
+        font-size: 2rem;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .row,
+    .answer-row {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    input[type="number"],
+    select {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        height: 100dvh;
+    }
+
+    .container {
+        width: 90%;
+
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+    }
+
+    input[type="number"],
+    select {
+        padding: 0.4rem;
+        font-size: 0.9rem;
+    }
+
+    input[type="number"] {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+}

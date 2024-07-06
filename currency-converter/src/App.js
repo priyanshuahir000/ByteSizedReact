@@ -36,7 +36,7 @@ function App() {
       }
     }
     if (!amount || amount <= 0) {
-      setAmount(1);
+      setAmount("");
       return;
     }
     convert();

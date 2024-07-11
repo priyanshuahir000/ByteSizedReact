@@ -5,6 +5,13 @@ import Loader from "./Loader";
 import Error from "./Error";
 import StartScreen from "./StartScreen";
 import Question from "./Question";
+import Progress from "./Progress";
+import FinishedScreen from "./FinishedScreen";
+import NextButton from "./NextButton";
+import Footer from "./Footer";
+import Timer from "./Timer";
+
+const SECS_PER_QUESTION = 15;
 
 const initialState = {
   questions: [],
@@ -13,6 +20,8 @@ const initialState = {
   index: 0,
   answer: null,
   points: 0,
+  highScore: 0,
+  secondsRemaining: null,
 };
 
 function reducer(state, action) {
@@ -32,6 +41,7 @@ function reducer(state, action) {
       return {
         ...state,
         status: "active",
+        secondsRemaining: state.questions.length * SECS_PER_QUESTION,
       };
     case "newAnswer":
       const question = state.questions.at(state.index);
@@ -49,18 +59,41 @@ function reducer(state, action) {
         index: state.index + 1,
         answer: null,
       };
+    case "finished":
+      return {
+        ...state,
+        status: "finished",
+        highScore: Math.max(state.highScore, state.points),
+      };
+    case "restart":
+      return {
+        ...initialState,
+        questions: state.questions,
+        highScore: state.highScore,
+        status: "ready",
+      };
+    case "tick":
+      return {
+        ...state,
+        secondsRemaining: state.secondsRemaining - 1,
+        status: state.secondsRemaining === 0 ? "finished" : state.status,
+      };
     default:
       throw new Error("Invalid action type");
   }
 }
 
 function App() {
-  const [{ questions, status, index, answer }, dispatch] = useReducer(
-    reducer,
-    initialState
-  );
+  const [
+    { questions, status, index, answer, points, highScore, secondsRemaining },
+    dispatch,
+  ] = useReducer(reducer, initialState);
 
   const numOfQuestions = questions.length;
+  const maxPossiblePoints = questions.reduce(
+    (prev, curr) => prev + curr.points,
+    0
+  );
 
   useEffect(() => {
     async function getData() {
@@ -85,18 +118,36 @@ function App() {
         )}
         {status === "active" && (
           <>
+            <Progress
+              index={index}
+              numOfQuestions={numOfQuestions}
+              points={points}
+              maxPossiblePoints={maxPossiblePoints}
+              answer={answer}
+            />
             <Question
               question={questions[index]}
               dispatch={dispatch}
               answer={answer}
             />
-            <button
-              className="btn btn-ui"
-              onClick={() => dispatch({ type: "nextQuestion" })}
-            >
-              Next Question
-            </button>
+            <Footer>
+              <Timer dispatch={dispatch} secondsRemaining={secondsRemaining} />
+              <NextButton
+                dispatch={dispatch}
+                answer={answer}
+                index={index}
+                numOfQuestions={numOfQuestions}
+              />
+            </Footer>
           </>
+        )}
+        {status === "finished" && (
+          <FinishedScreen
+            points={points}
+            maxPossiblePoints={maxPossiblePoints}
+            highScore={highScore}
+            dispatch={dispatch}
+          />
         )}
       </Main>
     </div>

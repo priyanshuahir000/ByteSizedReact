@@ -46,19 +46,19 @@ Welcome to my collection of React projects! This repository contains various pro
 ## Projects
 <details>
   <summary>1. Accordion</summary>
-  <p>An interactive accordion component that allows users to expand and collapse sections of content.</p>
+  <p>This project is a simple Accordion component built with React. The Accordion allows users to toggle the visibility of content sections, revealing more information when a section is clicked. It’s a great way to manage and display large amounts of content in a compact space. This project demonstrates the use of state management in React, particularly focusing on handling user interactions to dynamically show or hide content. The Accordion is fully customizable, making it a reusable component in various parts of an application.</p>
   
   **Live Demo:** [Accordion](./accordion)
-     <br>
-  **ScreenShot**![Accordion Screenshot](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/bill-splitter/public/logo512.png)
+     <br><br>
+  ![Accordion Screenshot](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/index/resources/accordion.gif)
 </details>
 <details>
   <summary>2. Bill Splitter</summary>
   <p>A handy app to split bills among friends, calculate each person's share, and handle tip distribution.</p>
     
-  **Live Demo:** [Accordion](./accordion)
+  **Live Demo:** [atomic-blog](./accordion)
      <br>
-  **ScreenShot**![Accordion Screenshot](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/bill-splitter/public/logo512.png)
+  ![Attomic Blog Demo](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/index/resources/atomic-blog.gif)
 </details>
 <details>
   <summary>3. Currency Converter</summary>
@@ -123,6 +123,14 @@ Welcome to my collection of React projects! This repository contains various pro
   **Live Demo:** [Accordion](./accordion)
      <br>
   **ScreenShot**![Accordion Screenshot](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/bill-splitter/public/logo512.png)
+</details>
+<details>
+  <summary>11. Atomic Blog</summary>
+  <p>The "Atomic Blog" project is a React-based blogging platform where users can create, search, and manage posts. This project highlights the use of state management, derived states, and effects in React to create a dynamic user experience. The blog generates random posts using the faker library and allows users to add their own posts through a form. Additionally, it features a search function that filters posts based on user input and a dark mode toggle for enhanced user experience. The project also includes an archive section with a large number of posts that can be added back to the main blog, demonstrating efficient rendering techniques in React.</p>
+    
+  **Live Demo:** [Accordion](./accordion)
+     <br>
+  **ScreenShot**![Accordion Screenshot](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/index/resources/atomic-blog.gif)
 </details>
 
 

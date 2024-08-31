@@ -54,19 +54,19 @@ Welcome to my collection of React projects! This repository contains various pro
 </details>
 <details>
   <summary>2. Bill Splitter</summary>
-  <p>A handy app to split bills among friends, calculate each person's share, and handle tip distribution.</p>
+  <p>The "Bill Splitter" project is a simple React application designed to help users split bills among friends or group members. This project emphasizes the use of React's state management to handle user inputs and calculations. Users can input the total bill amount, the number of people, and any additional factors like tips or discounts, and the app will automatically calculate each person's share. This project showcases the use of form handling in React, along with basic mathematical operations to provide a clear and user-friendly solution for splitting expenses.</p>
     
-  **Live Demo:** [atomic-blog](./accordion)
-     <br>
-  ![Attomic Blog Demo](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/index/resources/atomic-blog.gif)
+  **Live Demo:** [Bill Splitter](./accordion)
+     <br><br>
+  ![Attomic Blog Demo](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/index/resources/bill-splitter.gif)
 </details>
 <details>
   <summary>3. Currency Converter</summary>
-  <p>A simple currency converter that fetches real-time exchange rates and converts amounts between different currencies.</p>
+  <p>The "Currency Converter" project is a React application that allows users to convert amounts between different currencies. This project demonstrates the use of API integration to fetch real-time exchange rates and perform accurate currency conversions. Users can input the amount they want to convert, select the source and target currencies, and instantly see the converted value. The project highlights how to manage external data within a React app, handle user inputs, and dynamically update the UI based on fetched data, making it a practical example of using React for financial tools.</p>
     
-  **Live Demo:** [Accordion](./accordion)
-     <br>
-  **ScreenShot**![Accordion Screenshot](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/bill-splitter/public/logo512.png)
+  **Live Demo:** [Currency Converter](./accordion)
+     <br><br>
+  **ScreenShot**![Accordion Screenshot](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/index/resources/currency-converter.png)
 </details>
 <details>
   <summary>4. Movie Rating</summary>

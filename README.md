@@ -70,11 +70,11 @@ Welcome to my collection of React projects! This repository contains various pro
 </details>
 <details>
   <summary>4. Movie Rating</summary>
-  <p>A movie rating app where users can search for movies, view details, and rate them. Utilizes custom hooks for enhanced functionality.</p>
+  <p>The "Movie Rating" project is a React application that enables users to rate and review movies. This project showcases how to build interactive UIs using React, allowing users to select a movie, provide a rating, and write a review. The app then displays the average rating and user reviews, giving an overview of the movie's reception. This project demonstrates state management in React, as well as the ability to handle user inputs and dynamically update content. It’s a great example of how React can be used to create engaging, user-driven applications for entertainment purposes.</p>
    
-  **Live Demo:** [Accordion](./accordion)
+  **Live Demo:** [Movie Rating](./accordion)
      <br>
-  **ScreenShot**![Accordion Screenshot](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/bill-splitter/public/logo512.png)
+  **ScreenShot**![Accordion Screenshot](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/index/resources/movie-rating.gif)
 </details>
 <details>
   <summary>5. Pizza Menu</summary>

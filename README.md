@@ -58,7 +58,7 @@ Welcome to my collection of React projects! This repository contains various pro
     
   **Live Demo:** [Bill Splitter](./accordion)
      <br><br>
-  ![Attomic Blog Demo](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/index/resources/bill-splitter.gif)
+  ![Bill Splitter Demo](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/index/resources/bill-splitter.gif)
 </details>
 <details>
   <summary>3. Currency Converter</summary>
@@ -66,23 +66,23 @@ Welcome to my collection of React projects! This repository contains various pro
     
   **Live Demo:** [Currency Converter](./accordion)
      <br><br>
-  **ScreenShot**![Accordion Screenshot](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/index/resources/currency-converter.png)
+  **ScreenShot**![Currency Converter Screenshot](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/index/resources/currency-converter.png)
 </details>
 <details>
   <summary>4. Movie Rating</summary>
-  <p>The "Movie Rating" project is a React application that enables users to rate and review movies. This project showcases how to build interactive UIs using React, allowing users to select a movie, provide a rating, and write a review. The app then displays the average rating and user reviews, giving an overview of the movie's reception. This project demonstrates state management in React, as well as the ability to handle user inputs and dynamically update content. It’s a great example of how React can be used to create engaging, user-driven applications for entertainment purposes.</p>
+  <p>The "Movie Rating" project is a personalized React application where you can rate movies and create a list of those you’ve watched. This app allows you to rate each movie and then provides an analysis based on your ratings. It serves as a personal movie journal, helping you keep track of your movie-watching habits and preferences. The project highlights state management and how React can be used to build customized tools that cater to specific needs, offering both functionality and a way to reflect on your movie experiences.</p>
    
   **Live Demo:** [Movie Rating](./accordion)
-     <br>
-  **ScreenShot**![Accordion Screenshot](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/index/resources/movie-rating.gif)
+     <br><br>
+  **ScreenShot**![Movie rating Screenshot](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/index/resources/movie-rating.gif)
 </details>
 <details>
   <summary>5. Pizza Menu</summary>
-  <p>An interactive menu for a pizza restaurant, allowing users to browse different pizza options and add them to their order.</p>
+  <p>The "Pizza Menu" project is a React application that presents a list of available pizzas, allowing users to browse through different options. This project illustrates how to create a dynamic and responsive menu interface in React. Each pizza item includes details such as the name, description, price, and availability. The app showcases the use of component-based architecture in React, where each pizza item is a reusable component, and the entire menu is rendered based on a list of pizza objects. It’s a practical example of managing and displaying data within a React application, perfect for use in food ordering platforms.</p>
    
-  **Live Demo:** [Accordion](./accordion)
-     <br>
-  **ScreenShot**![Accordion Screenshot](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/bill-splitter/public/logo512.png)
+  **Live Demo:** [Pizza Menu](./accordion)
+     <br><br>
+  **ScreenShot**![Accordion Screenshot](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/index/resources/pizza-menu.gif)
 </details>
 <details>
   <summary>6. React Quiz</summary>

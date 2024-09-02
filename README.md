@@ -86,19 +86,19 @@ Welcome to my collection of React projects! This repository contains various pro
 </details>
 <details>
   <summary>6. React Quiz</summary>
-  <p>A quiz application built with React, featuring multiple-choice questions and scoring.</p>
+  <p>The "React Quiz" project is an interactive quiz application built with React. This project allows users to take quizzes on various topics, providing a score at the end based on their performance. It demonstrates the use of state to track user answers, calculate scores, and display results. The project also includes features like timed questions, multiple-choice options, and instant feedback, making it an engaging way to test and improve knowledge. This project showcases how React can be used to create dynamic, interactive learning tools with real-time feedback.</p>
     
-  **Live Demo:** [Accordion](./accordion)
-     <br>
-  **ScreenShot**![Accordion Screenshot](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/bill-splitter/public/logo512.png)
+  **Live Demo:** [React Quiz](./accordion)
+     <br><br>
+  **ScreenShot**![React Quiz Screenshot](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/index/resources/react-quize.gif)
 </details>
 <details>
   <summary>7. Steps Tracker</summary>
-  <p>A simple app to track daily steps and visualize progress.</p>
+  <p>The "Steps Tracker" project is a React application designed to help users monitor their daily steps and track progress over time. This project demonstrates the use of state management in React to record and display the number of steps taken each day. Users can input their daily steps, and the app will provide a visual summary, showing trends and helping users stay motivated in their fitness journey. The project highlights the practical application of React for health and fitness tracking, offering a simple yet effective way to visualize and manage personal activity data.</p>
    
-  **Live Demo:** [Accordion](./accordion)
-     <br>
-  **ScreenShot**![Accordion Screenshot](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/bill-splitter/public/logo512.png)
+  **Live Demo:** [Steps Tracker](./accordion)
+     <br><br>
+  **ScreenShot**![Steps Tracker Screenshot](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/index/resources/steps.gif)
 </details>
 <details>
   <summary>8. Tabs</summary>

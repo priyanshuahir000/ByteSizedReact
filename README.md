@@ -102,19 +102,19 @@ Welcome to my collection of React projects! This repository contains various pro
 </details>
 <details>
   <summary>8. Tabs</summary>
-  <p>A tabbed interface that fetches and displays dynamic data for different tabs.</p>
+  <p>The "Tabs" project is a React application that allows users to navigate through different content sections using a tabbed interface. Each tab displays a summary and detailed information, with the ability to toggle the visibility of the details. Users can also "like" the content, as the app includes a simple likes counter for each tab. Additionally, there’s a special "different tab" that resets the state when selected, demonstrating how React manages state across different components. This project showcases React's ability to handle dynamic content rendering and state management, making it a practical example of a tab-based user interface.</p>
     
-  **Live Demo:** [Accordion](./accordion)
-     <br>
-  **ScreenShot**![Accordion Screenshot](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/bill-splitter/public/logo512.png)
+  **Live Demo:** [Tabs](./accordion)
+     <br><br>
+  **ScreenShot**![Tabs Screenshot](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/index/resources/tabs.png)
 </details>
 <details>
   <summary>9. Tip Calculator</summary>
-  <p>An easy-to-use tip calculator to quickly determine how much to tip based on the bill amount and desired tip percentage.</p>
+  <p>The "Tip Calculator" is a React app designed to help users quickly calculate tips based on the satisfaction levels of both the user and a friend. The app allows users to input the bill amount and specify how satisfied each person was with the service, which influences the tip calculation. Once the bill is entered, the result dynamically updates, showing the calculated tip amount. This project is a practical application of state management and conditional rendering in React, giving users a straightforward way to split and calculate tips based on satisfaction.</p>
    
-  **Live Demo:** [Accordion](./accordion)
-     <br>
-  **ScreenShot**![Accordion Screenshot](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/bill-splitter/public/logo512.png)
+  **Live Demo:** [Tip calculator](./accordion)
+     <br><br>
+  **ScreenShot**![Tip calculator Screenshot](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/index/resources/currency-converter.gif)
 </details>
 <details>
   <summary>10. Travel List</summary>

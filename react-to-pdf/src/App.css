@@ -1,0 +1,74 @@
+
+        /* Define custom properties with @property */
+        @property --r2 {
+          syntax: "<angle>";
+          inherits: false;
+          initial-value: 0deg;
+        }
+
+        @property --x {
+          syntax: "<length>";
+          inherits: false;
+          initial-value: 20px;
+        }
+
+        /* Animated button styles */
+
+        .rotation-animation {
+          animation: rotationKeyFrames -.64s linear 3s infinite, translationKeyFrames -.64s linear 3s infinite
+        }
+
+        /* Keyframes for rotation */
+        @keyframes rotationKeyFrames {
+          0% {
+            --r2: 0deg;
+          }
+          32.8228% {
+            --r2: 0deg;
+          }
+          50% {
+            --r2: 180deg;
+          }
+          82.8228% {
+            --r2: 180deg;
+          }
+          100% {
+            --r2: 360deg;
+          }
+        }
+
+        /* Keyframes for x movement */
+        @keyframes translationKeyFrames {
+          0% {
+            --x: 20px;
+          }
+          32.8228% {
+            --x: 180px;
+          }
+          50% {
+            --x: 180px;
+          }
+          82.8228% {
+            --x: 20px;
+          }
+          100% {
+            --x: 20px;
+          }
+        }
+
+        .pdf-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          min-height: 100vh; /* Ensure the PDF fills the entire page */
+          background-color: white; /* White background for PDF */
+          padding: 20px;
+          box-sizing: border-box;
+        }
+        
+        .pdf-notes {
+          margin-top: auto; /* Push the notes to the bottom */
+          padding-top: 20px;
+        }
+        
+  

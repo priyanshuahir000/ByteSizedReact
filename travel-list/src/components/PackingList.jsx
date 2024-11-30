@@ -15,11 +15,6 @@ export default function PackingList({ items, setItems }) {
       .sort((a, b) => Number(a.packed) - Number(b.packed));
   return (
     <div className="list">
-      <ul>
-        {sortedItems.map((item) => (
-          <Item i={item} key={item.id} setItems={setItems} />
-        ))}
-      </ul>
       <div className="actions">
         <select value={sort} onChange={(e) => setSort(e.target.value)}>
           <option value="input">Sort by input order</option>
@@ -36,6 +31,11 @@ export default function PackingList({ items, setItems }) {
           Clear List
         </button>
       </div>
+      <ul>
+        {sortedItems.map((item) => (
+          <Item i={item} key={item.id} setItems={setItems} />
+        ))}
+      </ul>
     </div>
   );
 }

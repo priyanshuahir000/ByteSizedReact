@@ -120,9 +120,9 @@ Welcome to my collection of React projects! This repository contains various pro
   <summary>10. Travel List</summary>
   <p>An app to create and manage a travel packing list, ensuring you never forget essential items on your trips.</p>
     
-  **Live Demo:** [Accordion](./accordion)
+  **Live Demo:** [Travel List](./accordion)
      <br>
-  **ScreenShot**![Accordion Screenshot](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/bill-splitter/public/logo512.png)
+  **ScreenShot**![Travel List Screenshot](https://github.com/priyanshuahir000/ByteSizedReact/blob/main/index/resources/travel-list.gif)
 </details>
 <details>
   <summary>11. Atomic Blog</summary>
